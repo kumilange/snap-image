@@ -1,0 +1,23 @@
+.Main {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.4) url("../img/bg-wood.jpg") center center no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.header {
+  height: 54px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.logo {
+  padding-top: 6px;
+  padding-left: 40px;
+  text-align: left;
+  background: url("../img/camera-white-64.png") left no-repeat;
+  background-size: 32px 32px;
+}
+

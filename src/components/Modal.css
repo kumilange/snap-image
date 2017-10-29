@@ -1,0 +1,89 @@
+/*
+Pure CSS modal box
+Author: Jorge Chavez
+Github: http://github.com/jorgechavz
+*/
+
+.modal + div {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+
+.modal + div button {
+  background-color: #ffffff !important;
+  opacity: .7;
+  transition: opacity .2s linear;
+}
+
+.modal + div button:hover {
+  opacity: 1;
+}
+
+.modal + div button a {
+  display: block;
+  position: relative;
+  color: #333333;
+}
+
+.material-icons.back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #333333;
+}
+
+/* Background */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7) url("../img/bg-wood.jpg") center center no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.modal .modal-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Box */
+.modal .modal-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 50px;
+  max-width: 80%;
+  min-width: 200px;
+  min-height: 100px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  font-size: 24px;
+}
+
+.modal-imgWrap {
+  color: #ffffff;
+}
+
+.modal .modal-wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 3px solid #ffffff;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
